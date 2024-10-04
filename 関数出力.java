@@ -22,5 +22,7 @@ public class 関数出力 {
         apple = 100;
         orange = 200;                           //apple,orangeの値段を設定
         math(apple,orange);                     //math関数を呼び出し
+        //戻り値
+        
     }
 }

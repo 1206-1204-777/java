@@ -89,9 +89,15 @@ public class paiza用{
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
     	String data = sc.nextLine();        //標準入力を受け取るdata変更を作成
-        System.out.println(data);
+        //System.out.println(data);
 
-        String[] array = data.split(",");
+        String[] array = data.split(",");  //splitを使用して入力したデータを','で区切られた分ずつ配列arrayに格納
         System.out.println(array[0]);
+        System.out.println(array[1]);
+        System.out.println(array.length);
+
+        for (String work : array) {
+            System.out.println("Hello "+work);
+        }
     }
 }

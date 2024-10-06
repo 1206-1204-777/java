@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class paiza用{
@@ -98,6 +99,16 @@ public class paiza用{
 
         for (String work : array) {
             System.out.println("Hello "+work);
+        }
+        //複数行の入力を格納    
+        ArrayList<String> array2 = new ArrayList<>();
+        while(sc.hasNextLine()){
+            String data2 = sc.nextLine();
+            array2.add(data2);
+        }
+        for (String str : array2) {
+            System.out.println(str);
+            break;
         }
     }
 }

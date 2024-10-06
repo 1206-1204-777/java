@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 public class paiza用{
     public static void main(String[] args) {
         /*int x = 6;
@@ -81,8 +84,12 @@ public class paiza用{
         for (int ii = 1; ii<=10; ii++){
             System.out.println("Hello world "+ii);
         }
+        //標準入力を追加
         System.out.println("");
-    	
+        @SuppressWarnings("resource")
+        Scanner sc = new Scanner(System.in);
+    	String data = sc.nextLine();        //標準入力を受け取るdata変更を作成
+        System.out.println(data);
     	
     }
 }

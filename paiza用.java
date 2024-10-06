@@ -102,13 +102,17 @@ public class paiza用{
         }
         //複数行の入力を格納    
         ArrayList<String> array2 = new ArrayList<>();
-        while(sc.hasNextLine()){
+
+        while (sc.hasNextLine()) {
             String data2 = sc.nextLine();
+            if (data2.isEmpty()) {
+                break; // 空行が入力されたらループを抜ける
+            }
             array2.add(data2);
         }
+
         for (String str : array2) {
             System.out.println(str);
-            break;
         }
     }
 }

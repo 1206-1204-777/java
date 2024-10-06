@@ -84,12 +84,14 @@ public class paiza用{
         for (int ii = 1; ii<=10; ii++){
             System.out.println("Hello world "+ii);
         }
-        //標準入力を追加
+        //標準入力を配列に格納
         System.out.println("");
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
     	String data = sc.nextLine();        //標準入力を受け取るdata変更を作成
         System.out.println(data);
-    	
+
+        String[] array = data.split(",");
+        System.out.println(array[0]);
     }
 }

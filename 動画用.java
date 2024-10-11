@@ -22,16 +22,18 @@ public class 動画用 {
         do{
             num*=2;
             System.out.println(num);
-        }while(num<5);//条件は間違っているが１度だけ条件が実行される
+        }while(num<5);                          //条件は間違っているが１度だけ条件が実行される
         //continue文
         int z;
         for (z=0; z<5; z++) {
             System.out.print(z);
             if(z==4)
-            continue;//この分以降の処理をスキップ(実行しない)
+            continue;                           //この分以降の処理をスキップ(実行しない)
                 System.out.print(",");
-        }System.out.println();
-        //関数
-        
+        }
+        System.out.println();
+        //配列
+        int[] array3 = {10,20,30};              //配列の変数array3を作成し３つの要素を入れる
+        System.out.println(array3[0]);
     }
 }

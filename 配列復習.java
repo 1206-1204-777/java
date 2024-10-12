@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class 配列復習 {
     public static void main(String[] args) {
@@ -51,6 +52,21 @@ public class 配列復習 {
         team.add("cat");                              //ArrayListに要素を２つ追加
 
         System.out.println(team.get(1));          //ArrayListの[1]を出力
-        System.out.println(team.size());        
+        System.out.println(team.size());                //要素数を出力
+
+        System.out.println();
+
+        System.out.println("入力データの格納");
+
+        Scanner sc = new Scanner(System.in);            //Scanner変数scを作成
+        String data = sc.nextLine();                    //取得したデータをdata変数に１行ごとに格納
+        System.out.println("格納したデータ："+data);       //dataを出力
+
+        String [] array = data.split(",");        //カンマごとに入力地を配列に格納
+        System.out.println(array[2]);                   //入力値の３つ目を出力
+
+        for(String study : array) {
+            System.out.println(study);
+        }
     }
 }

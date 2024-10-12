@@ -24,11 +24,23 @@ public class 配列復習 {
 
         System.out.println("配列とループの組み合わせ");
 
-        System.out.println(name.length);    //nameの要素数を表示
+        System.out.println(name.length+" ：要素数");    //nameの要素数を表示
 
         for (String element : name) {
             System.out.println(element);    //for文を使用しname配列の要素をすべて出力
         }
-        
+        System.out.println();
+        System.out.println("要素の合計");
+
+        int [] numbers = {12,12,4,7,8,95};  //この配列の要素を合計する
+        int sum = 0;                        //空の変数を作成
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];              //空の要素sumに要素数と同じ回数[0]から順に要素を足す
+        }
+        System.out.println(sum);            //合計を出力
+
+        System.out.println();
+
+        System.out.println("");
     }
 }

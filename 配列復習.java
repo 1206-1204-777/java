@@ -34,13 +34,14 @@ public class 配列復習 {
 
         int [] numbers = {12,12,4,7,8,95};  //この配列の要素を合計する
         int sum = 0;                        //空の変数を作成
-        for (int i = 0; i < numbers.length; i++) {
-            sum += numbers[i];              //空の要素sumに要素数と同じ回数[0]から順に要素を足す
+        for (int number : numbers) {
+            sum += number;                  //空の要素sumに要素数と同じ回数[0]から順に要素を足す
         }
         System.out.println(sum);            //合計を出力
 
         System.out.println();
 
         System.out.println("");
+
     }
 }

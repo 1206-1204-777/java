@@ -58,6 +58,7 @@ public class 配列復習 {
 
         System.out.println("入力データの格納");
 
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);            //Scanner変数scを作成
         String data = sc.nextLine();                    //取得したデータをdata変数に１行ごとに格納
         System.out.println("格納したデータ："+data);       //dataを出力

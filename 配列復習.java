@@ -20,6 +20,15 @@ public class 配列復習 {
 
         int num =1;                         //変数を使用して取り出す要素番号を指定
         System.out.println(name[num]);      //指定した要素を出力
+        System.out.println();
+
+        System.out.println("配列とループの組み合わせ");
+
+        System.out.println(name.length);    //nameの要素数を表示
+
+        for (String element : name) {
+            System.out.println(element);    //for文を使用しname配列の要素をすべて出力
+        }
+        
     }
-    
 }

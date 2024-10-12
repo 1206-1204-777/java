@@ -63,7 +63,7 @@ public class 配列復習 {
         String data = sc.nextLine();                    //取得したデータをdata変数に１行ごとに格納
         System.out.println("格納したデータ："+data);       //dataを出力
 
-        String [] array = data.split(",");        //カンマごとに入力地を配列に格納
+        String [] array = data.split(",");        //カンマごとに入力値を配列に格納
         System.out.println(array[2]);                   //入力値の３つ目を出力
 
         for(String study : array) {

@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 public class 配列復習 {
     public static void main(String[] args) {
         //変数と配列の違い
@@ -41,7 +44,13 @@ public class 配列復習 {
 
         System.out.println();
 
-        System.out.println("");
+        System.out.println("arrayLst");
+        ArrayList<String> team = new ArrayList<>();     //ArrayList変数teamを作成
 
+        team.add("dog");
+        team.add("cat");                              //ArrayListに要素を２つ追加
+
+        System.out.println(team.get(1));          //ArrayListの[1]を出力
+        System.out.println(team.size());        
     }
 }

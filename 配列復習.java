@@ -69,5 +69,12 @@ public class 配列復習 {
         for(String study : array) {
             System.out.println(study);
         }
+        int [] re = {10,20,100};
+        int rem2 = 0;
+        for (int rem : re) {
+            rem2 += rem;
+            System.out.println(rem2);
+            
+        }
     }
 }

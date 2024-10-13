@@ -8,7 +8,7 @@ public class 関数復習 {
         System.out.println("Hello ");
     }
 
-    public static void math(int x, int y) {             //引数(int x, int y)を作成
+    public static void math(int x, int y) {             //仮引数(int x, int y)を作成
         System.out.println(x * 10);
         System.out.println("合計"+ ((10*x)+(5*y)));     //複数の引数を受け取り処理
     }

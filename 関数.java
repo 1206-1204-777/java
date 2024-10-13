@@ -1,4 +1,4 @@
-public class 関数出力 {
+public class 関数 {
     public static void hello(){                 //関数helloを作成
         System.out.println("Hello world");
     }

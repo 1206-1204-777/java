@@ -1,4 +1,7 @@
 public class 二次元配列 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("2次元配列の作成");
         String[] teamC = {"勇者", "戦士", "魔法使い"};
@@ -16,5 +19,18 @@ public class 二次元配列 {
         System.out.println(teams[0][0]);                    
         System.out.println(teams[1][2]);
         System.out.println(teams[0][2]);
+        System.out.println("");
+
+        System.out.println("ループでの処理方法");           //ループを使用し各要素の番号を改行して出力
+        for(int i = 0; i < teams.length; i++) {
+            for (int j = 0; j < teams[i].length; j++) {
+                System.out.print(i);
+                System.out.print(j);
+                System.out.print(" ");
+            }
+            System.out.println("");
+            System.out.println("----------");
+        }
+        
     }
 }

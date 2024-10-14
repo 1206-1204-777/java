@@ -31,7 +31,16 @@ public class 二次元配列 {
             }
             System.out.println("");
             System.out.println("----------");
+        }System.out.println("");
+        
+        System.out.println("newを使用して2次元配列を作成");
+        int[][] num = new int[3][4];
+        System.out.println(num[2].length);
+        for (int[] element : num) {
+            for (int j = 0; j < element.length; j++) {
+                System.out.print(element[j]);
+                
+            }
         }
-
     }
 }

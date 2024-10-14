@@ -13,7 +13,7 @@ public class 二次元配列 {
 
         System.out.println("配列の操作");
         teamC[2] = "魔導士";
-        System.out.println(teams[0][0]);                    //記述の説明：[0](teamsの要素番号)[1](teamsに格納した配列内の要素)
+        System.out.println(teams[0][0]);                    
         System.out.println(teams[1][2]);
         System.out.println(teams[0][2]);
     }

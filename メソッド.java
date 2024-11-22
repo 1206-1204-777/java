@@ -5,8 +5,8 @@ public static void main(String[] args) {  //mainメソッドを作成
     int num1 = math(3,2);                 //int num1変数を作成。変数内容はmathメソッドに３を渡す
     System.out.println(num1);             //mathメソッドから返ってきた値を出力する
 
-    Msg msg1 = new Msg();
-    msg1.msg();
+    Msg msg1 = new Msg();                 //Msgクラスを変数msg1に代入
+    msg1.msg();                           //Msgのmsgメソッドを呼び出す
 }
 public static void sayHello(){
     System.out.println("Hello world");  //sayHelloメソッドを作成

@@ -5,8 +5,10 @@ public static void main(String[] args) {  //mainメソッドを作成
     int num1 = math(3,2);                 //int num1変数を作成。変数内容はmathメソッドに３を渡す
     System.out.println(num1);             //mathメソッドから返ってきた値を出力する
 
-    Msg msg1 = new Msg();                 //Msgクラスを変数msg1に代入
-    msg1.msg();                           //Msgのmsgメソッドを呼び出す
+    Msg msg1 = new Msg("戦士");       //Msgクラス内のメンバー変数myNameを変数msg1に代入
+    msg1.msg();                           //Msgクラスのmsgメソッドを呼び出す
+    Msg msg2 = new Msg("Wolf");
+    msg2.msg();
 }
 public static void sayHello(){
     System.out.println("Hello world");  //sayHelloメソッドを作成
@@ -18,7 +20,12 @@ public static int math(int x,int y) {               //mathメソッドを作成
 } 
 
 class Msg{                                  //Msgクラスを作成
+    private final String myName;            //メンバー変数myNameを作成
+
+    public Msg(String name){                //コンストラクタを作成
+        myName = name;                      //初期値の設定
+    }
     public void msg(){
-        System.out.println("I walk to day");
+        System.out.println(myName+" is walk");
     }
 }

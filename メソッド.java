@@ -9,6 +9,10 @@ public static void main(String[] args) {  //mainメソッドを作成
     msg1.msg();                           //Msgクラスのmsgメソッドを呼び出す
     Msg msg2 = new Msg("Wolf");
     msg2.msg();
+
+    Item apple = new Item(120, 25);
+    int total = apple.getTotalAmount();
+    System.out.println(total);
 }
 public static void sayHello(){
     System.out.println("Hello world");  //sayHelloメソッドを作成
@@ -28,4 +32,17 @@ class Msg{                                  //Msgクラスを作成
     public void msg(){
         System.out.println(myName+" is walk");
     }
+}
+
+class Item{
+    private final int price;
+    private final int Quantity;
+    public Item(int newPrice,int newQuantity){
+        price = newPrice;
+        Quantity = newQuantity;
+    }
+
+public int getTotalAmount(){
+    return price * Quantity;
+}
 }

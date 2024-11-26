@@ -7,6 +7,11 @@ public class 継承 {
 
         constructor constructor = new constructor("south"); //constructorオブジェクトを作成し引数の内容を記述
         constructor.test2();                                     //constructorオブジェクトのテストメソッドを呼び出し
+
+        Magic magic = new Magic("test2");
+        magic.out();
+        magic.test2();
+        
     }
     public void test(){
         int x = 50;
@@ -30,5 +35,17 @@ class constructor{
     }
     public void test2() {                      //引数を格納したtestフィールドを出力するメソッドを作成
         System.out.println(test);
+    }
+}
+
+class  Magic extends 継承{
+    public Magic(String maString){
+        super();
+    }
+    public void out(){
+        System.out.println("test2");
+    }
+    public void test2(){
+        System.out.println("test3");           //test2メソッドをオーバーライド(上書き)
     }
 }

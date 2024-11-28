@@ -11,12 +11,13 @@ public class hashmap {
 
         System.out.println(enemyMap.get("B"));                //出力する
 
-        HashMap<Integer,ArrayList<String>> testHashMap = new HashMap<>();
+        HashMap<Integer,ArrayList<String>> testHashMap = new HashMap<>();  //ArrayLst格納用のhashmapを作成し内容の型をArraylistの要素に指定
 
         ArrayList<String> test1 = new ArrayList<>();
         test1.add("12");
         test1.add("58");
-        testHashMap.put(1, test1);
+        test1.add("589");
+        testHashMap.put(1, test1);                            //hashmapに格納し内容は要素を指定
 
         ArrayList<String> test2 = new ArrayList<>();
         test2.add("test");

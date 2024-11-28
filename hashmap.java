@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 public class hashmap {
     public static void main(String[] args) {
         
@@ -27,6 +28,9 @@ public class hashmap {
 
         for (Map.Entry<Integer,ArrayList<String>> entry : testHashMap.entrySet()) {
             System.out.println("key:"+entry.getKey()+" "+entry.getValue());
+        }
+        for (Entry<String,String> entry: enemyMap.entrySet()) {
+            System.out.println(entry.getValue());
         }
     }
 }

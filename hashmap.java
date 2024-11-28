@@ -8,8 +8,9 @@ public class hashmap {
         enemyMap.put("C","monster");
         enemyMap.put("B", "Dragon");                    //データを格納
         //enemyMap.put("B", "Got");                               //Bの内容を上書き
+        String test = "B";
 
-        System.out.println(enemyMap.get("B"));                //出力する
+        System.out.println(enemyMap.get(test));                //出力する
 
         HashMap<Integer,ArrayList<String>> testHashMap = new HashMap<>();  //ArrayLst格納用のhashmapを作成し内容の型をArraylistの要素に指定
 

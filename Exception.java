@@ -8,7 +8,8 @@ public class Exception{
         try {                                         //例外があった場合に補足する範囲を決めてその処理を実行する  
             int num = Integer.parseInt("25");
         int answer = 100 / num;         
-        System.out.println(answer);                         
+        System.out.println(answer);
+        throw new ArithmeticException("NO");                     
         } catch (ArithmeticException e){            //エラーが発生した場合のメッセージを出力する
             //System.err.println("error "+ e.getMessage());
             e.printStackTrace();
@@ -21,6 +22,7 @@ public class Exception{
             // プレイヤー名を配列で記述する
         String [] players = {"勇者","戦士"};
         // 標準入力から整数を取り込み
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         int num = Integer.parseInt(sc.next());
         // 入力値に合わせて、プレイヤー名を表示する

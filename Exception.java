@@ -17,7 +17,5 @@ public class Exception{
         }
         
 
-        //様々な例外処理
-
     }
 }

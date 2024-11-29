@@ -1,4 +1,5 @@
 public class Exception{
+    @SuppressWarnings("CallToPrintStackTrace")
     public static void main(String[] args) {
         System.out.println("Hello world");
         //例外処理の記述
@@ -7,10 +8,16 @@ public class Exception{
         int answer = 100 / num;         
         System.out.println(answer);                         
         } catch (ArithmeticException e){            //エラーが発生した場合のメッセージを出力する
-            System.out.println("error "+ e.getMessage());
+            //System.err.println("error "+ e.getMessage());
+            e.printStackTrace();
+           // System.out.println(e);
+            
         }finally {                                  //例外の有無にかかわらず処理をする
             System.out.println("java");
         }
         
+
+        //様々な例外処理
+
     }
 }

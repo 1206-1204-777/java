@@ -32,7 +32,7 @@ public class Exception{
             e.printStackTrace();        
         
         }catch (NumberFormatException e){
-            System.out.println("数字を入力してください");
+            System.out.println("半角数字を入力してください");
             e.printStackTrace();
         }finally{
             System.out.println("GAME START");

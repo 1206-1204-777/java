@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Exception{
     @SuppressWarnings("CallToPrintStackTrace")
     public static void main(String[] args) {
@@ -15,7 +17,23 @@ public class Exception{
         }finally {                                  //例外の有無にかかわらず処理をする
             System.out.println("Hello java");
         }
+        try {
+            // プレイヤー名を配列で記述する
+        String [] players = {"勇者","戦士"};
+        // 標準入力から整数を取り込み
+        Scanner sc = new Scanner(System.in);
+        int num = Integer.parseInt(sc.next());
+        // 入力値に合わせて、プレイヤー名を表示する
+        System.out.println(players[num]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.err.println("0から1の数値を入力してください");
+            e.printStackTrace();        
         
-
+        }catch (NumberFormatException e){
+            System.out.println("数字を入力してください");
+            e.printStackTrace();
+        }finally{
+            System.out.println("GAME START");
+        }
     }
 }

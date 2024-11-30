@@ -14,9 +14,8 @@ public class writing {
 
                     writing.write(i+"\n");
                 }
-
                 //ファイルの読み込み
-            try (Scanner sc = new Scanner(file)) {//ファイルを指定して読み込む
+            try (Scanner sc = new Scanner(file)) { //ファイルを指定して読み込む
                 while (sc.hasNextLine()) {
                     boolean Line =  sc.hasNextLine();
                     System.out.println(Line);

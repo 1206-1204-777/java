@@ -10,13 +10,20 @@ public class writing {
                 writing.write("java\n");
                 writing.write("こんにちは");
 
-                //ファイルの読み込み
-                Scanner sc = new Scanner(file);         //ファイルを指定して読み込む
+                for (int i = 0; i < 100+1; i++) {        //forで１から１００までの数を書きこむ処理
+
+                    writing.write(i+"\n");
+                }
+
+
+            try ( //ファイルの読み込み
+                    Scanner sc = new Scanner(file) //ファイルを指定して読み込む
+            ) {
                 while (sc.hasNextLine()) {
                     boolean Line =  sc.hasNextLine();
                     System.out.println(Line);
                 }
-                sc.close();
+            }
         }
     }
 }
